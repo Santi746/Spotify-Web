@@ -1,2 +1,36 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+* text=auto  #ebebeb
+<img src="./images/search-alt-svgrepo-com (1).svg" id="search-logo">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="nav-section">
+                <section class="nav-section_flex-start" alt="search bar">
+                    <div alt="flex-start_spotify-logo">
+                        <img src=".\images\spotify-color-svgrepo-com (4).svg">
+                    </div>
+                    <div class="flex-start_home-logo">
+                    </div>
+                    <div class="flex-start_search-bar">
+                        <label for="search-bar_input"><img src=".\images\search-alt-svgrepo-com (1).svg" id="search-bar_search-logo">
+                        </label>
+                        <input type="text" id="search-bar_input" placeholder="¿Que quieres reproducir?">
+                        <label for="search-bar_input"></label>
+                            <svg id="explorer-icon"><path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2"></path><path d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4z">
+                            </path></svg>
+                        </label>
+                    </div>
+                </section>                
+            </section> 
+        </nav>
+    </header>
+</body>
+</html>

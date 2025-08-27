@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Variables */
+/* mixins */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*Navbar Flexs */
+.nav-section_flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  padding: 8px;
+  margin-left: 17px;
+}
+
+/*Navbar-Flex Start*/
+.nav_section_flex-start_spotify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 6px;
+  gap: 8px;
+}
+
+.nav_section_flex-start_spotify #spotify-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 18px;
+}
+
+.flex-start_search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+}
+
+.flex-start_search-bar .flex-start_search-bar_home-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-start_search-bar .flex-start_search-bar_home-logo_svg {
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #1f1f1f;
+  border-radius: 50px;
+}
+
+.flex-start_search-bar .flex-start_search-bar_home-logo_svg:hover {
+  color: #0000;
+}
+
+.flex-start_search-bar_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1f1f1f;
+  border-radius: 50px;
+  padding: 14px;
+  height: 48px;
+}
+
+.flex-start_search-bar_input #search-logo {
+  width: 24px;
+  height: 24px;
+  height: 4vh;
+}
+
+.flex-start_search-bar_input #input {
+  background: none;
+  border: none;
+  width: 420px;
+  padding: 7px;
+  font-size: 16px;
+  color: #B3B3B3;
+}
+
+.flex-start_search-bar_input .search-bar_explorer-icon {
+  gap: 7px;
+  padding-left: 5px;
+  border-left: 1px solid #B3B3B3;
+}
+
+.flex-start_search-bar_input .search-bar_explorer-icon #explorer-icon {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+  padding-left: 7px;
+  padding-top: 5px;
+}
+
+/* flex end */
+.nav-section_flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* btn-1 */
+.flex-end_buttons-1_btn-1 {
+  background: none;
+  border: none;
+}
+
+.flex-end_buttons-1_btn-1 #premium {
+  color: #B3B3B3;
+  font-size: 16px;
+}
+
+.flex-end_buttons-1_btn-2 {
+  background: none;
+  border: none;
+}
+
+.flex-end_buttons-1_btn-2 #ayuda {
+  color: #B3B3B3;
+  font-size: 16px;
+}
+
+.flex-end_buttons-1_btn-3 {
+  background: none;
+  border: none;
+}
+
+.flex-end_buttons-1_btn-3 #descargar {
+  color: #B3B3B3;
+  font-size: 16px;
+}
+
+/* btn-2 */
+.flex-end_buttons-2_btn-1 {
+  background: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #B3B3B3;
+}
+
+.flex-end_buttons-2_btn-1 .flex-end_buttons-2_btn-1_svg {
+  width: 24px;
+  height: 24px;
+}
+
+.flex-end_buttons-2_btn-1 #app {
+  font-size: 16px;
+}
+
+.flex-end_buttons-2_btn2 {
+  background: none;
+  border: none;
+}
+
+.flex-end_buttons-2_btn2 #register {
+  font-size: 16px;
+  color: #B3B3B3;
+}
+/*# sourceMappingURL=Spotify.css.map */
