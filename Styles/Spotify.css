@@ -58,6 +58,10 @@
   padding: 10px;
 }
 
+.flex-start_search-bar_home-logo:hover {
+  scale: 1.04;
+}
+
 .flex-start_search-bar_input {
   display: flex;
   place-items: center;
@@ -84,6 +88,7 @@
 .flex-start_search-bar_input .search-bar_input_search-logo {
   padding-left: 12px;
   padding-right: 12px;
+  cursor: pointer;
 }
 .flex-start_search-bar_input #search-logo {
   width: 25px;
@@ -106,6 +111,7 @@
   padding-left: 5px;
   padding-right: 14px;
   border-left: 1px solid #B3B3B3;
+  cursor: pointer;
 }
 .flex-start_search-bar_input .search-bar_explorer-icon #explorer-icon {
   width: 32px;
@@ -123,7 +129,7 @@
   flex-direction: row;
   justify-content: center;
   margin-right: 17px;
-  gap: 54px;
+  gap: 24px;
 }
 
 /* btn-1 */
@@ -132,13 +138,14 @@
   place-items: center;
   place-content: center;
   flex-direction: row;
-  gap: 14px;
+  gap: 12px;
 }
 
 .flex-end_buttons-1_btn-1 {
   background: none;
   border: none;
   gap: 12px;
+  cursor: pointer;
 }
 .flex-end_buttons-1_btn-1 #premium {
   color: #B3B3B3;
@@ -152,6 +159,7 @@
 .flex-end_buttons-1_btn-2 {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .flex-end_buttons-1_btn-2 #ayuda {
   color: #B3B3B3;
@@ -165,6 +173,7 @@
 .flex-end_buttons-1_btn-3 {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .flex-end_buttons-1_btn-3 #descargar {
   color: #B3B3B3;
@@ -175,14 +184,20 @@
   scale: 1.1;
 }
 
-/* btn-2 */
+.nav-section_flex-end_divider {
+  width: 1px;
+  height: 26px;
+  background-color: #ffffff;
+}
+
+/* btns-2 */
 .nav-section_flex-end_buttons-2 {
   display: flex;
   place-items: center;
   place-content: center;
   flex-direction: row;
   height: 58px;
-  gap: 18px;
+  gap: 24px;
 }
 
 .flex-end_buttons-2_btn-1 {
@@ -194,6 +209,7 @@
   flex-direction: row;
   gap: 5px;
   color: #B3B3B3;
+  cursor: pointer;
 }
 .flex-end_buttons-2_btn-1:hover {
   color: #ffffff;
@@ -211,6 +227,7 @@
 .flex-end_buttons-2_btn-2 {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .flex-end_buttons-2_btn-2 #register {
   font-size: 14px;
@@ -226,6 +243,7 @@
   border-color: #ffffff;
   height: 48px;
   width: 159px;
+  cursor: pointer;
 }
 .flex-end_buttons-2_btn-3:hover {
   scale: 1.04;
