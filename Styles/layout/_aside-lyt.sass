@@ -1,0 +1,95 @@
+@use "../utils/variables" as *
+@use "../utils/mixins" as *
+// layout del Aside y Footer //
+
+.main_aside
+    margin-left: 8px
+.aside_section 
+    margin: 3px
+
+.aside-section_title
+    @include flex-box
+    justify-content: space-between
+    align-items: center
+    padding: 16px
+    .aside-section_title_btn
+        @include small
+        padding: 4px
+        #plus-logo
+         @include small
+
+.aside-section_middle
+    display: grid
+    grid-template-rows: repeat(2, 142px)
+    gap: 16px
+    margin-top: 24px
+    .middle_playlist
+        display: flex
+        flex-direction: column
+        place-content: flex-start
+        place-items: start
+        margin: 6px
+        padding: 16px 21px 16px 21px
+        gap: 12px
+        .playlist-btn
+            margin-top: 7px
+            padding: 8px
+            height: 32px
+            width: 120px
+    .middle_podcast
+        display: flex
+        flex-direction: column
+        place-content: flex-start
+        place-items: start
+        margin: 6px
+        padding: 16px 21px 16px 21px
+        gap: 8px
+        .podcast-btn
+            margin-top: 12px
+            padding: 10px
+            height: 34px
+// Aside-footer //
+
+.aside-section_footer
+    display: grid
+    grid-template-rows: 130px 80px
+
+// Aside-footer, text //
+
+.footer_text
+    display: grid
+    grid-template-rows: repeat(3, 30px)
+    margin: 20px 20px 20px 26px
+.footer_text_row1
+    @include flex-box
+    justify-content: start
+    gap: 12px
+.footer_text_row2
+    @include flex-box
+    justify-content: start
+    gap: 12px
+.footer_text_row3
+    @include flex-box
+    justify-content: start
+    gap: 12px
+.footer_ubication
+    display: grid
+    grid-template-columns: 220px
+    gap: 12px
+    margin-right: 24px
+    padding: 12px
+    .footer_ubication_content
+        @include flex-box
+        justify-content: start
+        text-align: start
+        flex-direction: row
+        height: 32px
+        gap: $gapping
+        padding: 8px
+    
+
+
+    
+    
+  
+ 

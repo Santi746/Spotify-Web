@@ -1,0 +1,85 @@
+@use "../layout/aside-lyt" as *
+@use "../utils/variables" as *
+@use "../utils/mixins" as *
+
+// Aside y Foother //
+
+.main_aside
+    background-color: #121212
+    border-radius: 8px
+    
+// Aside, Seccion Titulo //
+
+.aside-section_title_text
+    color: $white-color
+    #biblioteca
+      color: $white-color
+      font-size: $font-small
+    .aside-section_title_btn    //ERROR A SOLUCINAR//
+        &:hover
+            background-color: &$text-gray-color
+            border-radius: 50px
+    .plus-logo
+        height: 16px
+        width: 16px
+        cursor: $cursor-pointer
+
+
+// Aside,Seccion Media //
+
+.aside-section_middle
+    .middle_playlist 
+        color: $white-color
+        background-color: #1f1f1f
+        border-radius: 8px
+        font-size: $font-very-small
+        #playlist-t1
+            font-size: $font-mid
+        .playlist-btn
+            background-color: $white-color
+            border-radius: $borders-radius
+            border: none
+            cursor: pointer
+            &:hover
+                scale: 1.04
+    .middle_podcast
+        color: $white-color
+        background-color: #1f1f1f
+        border-radius: 8px
+        font-size: $font-very-small
+        #podcast-t1
+            font-size: $font-small
+        .podcast-btn
+            background-color: $white-color
+            border-radius: $borders-radius
+            border: none
+            cursor: pointer
+            &:hover
+                scale: 1.04
+            
+// Foother //
+
+.footer_text_row1
+    list-style-type: none
+    font-size: 10px
+    color: $text-gray-color
+    cursor: $cursor-pointer
+.footer_text_row2
+    list-style-type: none
+    font-size: 10px
+    color: $text-gray-color
+    cursor: $cursor-pointer
+.footer_text_row3
+    font-size: 11px
+    color: $white-color
+    cursor: $cursor-pointer
+.footer_ubication_content
+    color: $white-color
+    border: solid 1px #848282
+    border-radius: 50px
+    font-size: $font-very-small
+    cursor: $cursor-pointer
+    &:hover
+        scale: 1.04
+        border-color: $white-color
+

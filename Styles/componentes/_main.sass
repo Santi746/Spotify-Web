@@ -1,0 +1,28 @@
+@use "../utils/variables" as *
+@use "../utils/mixins" as *
+@use "../layout/_main-lyt" as *
+
+.main-section
+    background-color: #1f1f1f
+    border-radius: 8px
+    overflow-y: auto
+ 
+.rows_title
+    .title_text
+        color: $white-color
+        font-size: $font-grand 
+    .title_text-2
+        color: $text-gray-color
+        font-size: $font-small
+.rows_cards-section_card
+    .thumbnails
+        @include thumbnail-size
+        border-radius: 8px
+    .cards-section_card_name
+        color: $white-color
+    .cards-section_card_artist
+        color: $text-gray-color
+        font-size: $font-small
+        
+        
+        

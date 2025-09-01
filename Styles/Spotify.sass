@@ -1,6 +1,8 @@
 @use "componentes/Navbar"
+@use "componentes/aside"
+@use "componentes/main"
+@use "utils/mixins" as grid-main-content-lyt
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 *
   margin: 0
   padding: 0
@@ -8,6 +10,8 @@
   
 body  
   background-color: #000000
-  font-family: "Montserrat", sans-serif
-
-
+  font-family: 'circular', sans-serif
+  overflow: hidden
+  .main
+    @include grid-main-content-lyt.grid-main-content-lyt
+  

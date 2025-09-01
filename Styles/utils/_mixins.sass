@@ -11,6 +11,14 @@
   align-items: start
   flex-direction: row
 
+@mixin grid-main-content-lyt
+  display: grid
+  grid-template-columns: 432px 1fr
+
+@mixin grid-main-content-rows-lyt
+  display: grid
+  grid-template-rows: 56px 280px
+
 @mixin off-borders-backgrounds
   background: none
   border: none
@@ -38,3 +46,8 @@
 @mixin v-big
   width: 46px
   height: 46px
+
+@mixin thumbnail-size
+  width: 180px
+  height: 180px
+
