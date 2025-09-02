@@ -1,9 +1,9 @@
 @use "../utils/variables" as *
 @use "../utils/mixins" as * 
 
-.main-section
+.main-section--lyt
     display: grid
-    grid-template-rows: repeat(6, 1fr)
+    grid-template-rows: repeat(6, 1fr)       
     margin: 0 8px
     padding: 14px 34px 14px 34px
     .main-section_rows
@@ -21,12 +21,12 @@
     gap: 24px
     .rows_cards-section_card
         display: grid
-        grid-template-rows: 180px 30px 80px
-        gap: 2px
-        .cards-section_card_name
-            @include flex-box
-            justify-content: start
-        .cards-section_cards_artist
+        grid-template-rows: 180px 1fr 80px
+        gap: 6px
+        .cards-section_card_name--lyt
+            justify-content: start 
+            gap: 8px
+            margin-top: 3px
         .E-class                      
             @include flex-box-start
             justify-content: start
@@ -34,7 +34,27 @@
             gap: 8px
         .E-img
             @include very-small
+
+.body-footer
+   display: grid
+   grid-template-rows: 100px
+   .body-footer_section--lyt 
+    padding: 14px
+    margin: 13px 8px 24px 8px
+
+.body-footer_section_btn--lyt
+    @include flex-box
+    height: 35px
+    margin-right: 8px
+ 
         
+
+
+
+
+
+    
+    
                 
     
 

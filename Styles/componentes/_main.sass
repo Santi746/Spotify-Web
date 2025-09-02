@@ -6,7 +6,6 @@
     background-color: #1f1f1f
     border-radius: 8px
     overflow-y: auto
- 
 .rows_title
     .title_text
         color: $white-color
@@ -14,15 +13,42 @@
     .title_text-2
         color: $text-gray-color
         font-size: $font-small
-.rows_cards-section_card
+.rows_cards-section_card 
     .thumbnails
         @include thumbnail-size
         border-radius: 8px
+    .thumbnails-artist
+        border-radius: 50%
     .cards-section_card_name
         color: $white-color
     .cards-section_card_artist
         color: $text-gray-color
         font-size: $font-small
+
+
+.body-footer_section
+    background: linear-gradient(45deg, #af2896, #509bf5)
+    .body-footer_section_text-1
+        font-size: $font-mid
+        color: $white-color
+        #linea-2
+            font-size: $font-small
+
         
-        
+.body-footer_section_btn
+  cursor: $cursor-pointer
+  &:hover
+    scale: 1.04
+  #footer-btn
+    font-size: $font-mid
+    border-radius: $borders-radius
+    border-color: $white-color
+    color: #000000
+    width: 190px
+    height: 48px        
+
+
+.card_name_station-class
+    font-size: $font-small
+    color: $text-gray-color
         

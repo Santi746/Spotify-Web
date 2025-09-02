@@ -13,11 +13,17 @@
 
 @mixin grid-main-content-lyt
   display: grid
-  grid-template-columns: 432px 1fr
+  grid-template-columns: 432px 1fr //no tiene un tamaño fijo es 1fr
+  height: 80dvh
 
 @mixin grid-main-content-rows-lyt
   display: grid
   grid-template-rows: 56px 280px
+
+@mixin main_aside-size
+  height: 80%
+  width: 80%
+  
 
 @mixin off-borders-backgrounds
   background: none
@@ -28,7 +34,7 @@
   height: 16px
 
 @mixin small
-  width: 24px
+  width: 24px  
   height: 24px
 
 @mixin xl-small

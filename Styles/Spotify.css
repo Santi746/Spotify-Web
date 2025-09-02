@@ -503,24 +503,24 @@
   border-color: #ffffff;
 }
 
-.main-section {
+.main-section--lyt {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   margin: 0 8px;
   padding: 14px 34px 14px 34px;
 }
-.main-section .main-section_rows {
+.main-section--lyt .main-section_rows {
   display: grid;
   grid-template-rows: 56px 280px;
 }
-.main-section .main-section_rows .rows_title {
+.main-section--lyt .main-section_rows .rows_title {
   display: flex;
   align-items: start;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.main-section .main-section_rows .rows_title .title_text-2 {
+.main-section--lyt .main-section_rows .rows_title .title_text-2 {
   margin-top: 24px;
 }
 
@@ -531,15 +531,13 @@
 }
 .rows_cards-section .rows_cards-section_card {
   display: grid;
-  grid-template-rows: 180px 30px 80px;
-  gap: 2px;
+  grid-template-rows: 180px 1fr 80px;
+  gap: 6px;
 }
-.rows_cards-section .rows_cards-section_card .cards-section_card_name {
-  display: flex;
-  place-items: center;
-  place-content: center;
-  flex-direction: row;
+.rows_cards-section .rows_cards-section_card .cards-section_card_name--lyt {
   justify-content: start;
+  gap: 8px;
+  margin-top: 3px;
 }
 .rows_cards-section .rows_cards-section_card .E-class {
   display: flex;
@@ -554,10 +552,28 @@
   height: 16px;
 }
 
+.body-footer {
+  display: grid;
+  grid-template-rows: 100px;
+}
+.body-footer .body-footer_section--lyt {
+  padding: 14px;
+  margin: 13px 8px 24px 8px;
+}
+
+.body-footer_section_btn--lyt {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-direction: row;
+  height: 35px;
+  margin-right: 8px;
+}
+
 .main-section {
   background-color: #1f1f1f;
   border-radius: 8px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .rows_title .title_text {
@@ -574,12 +590,46 @@
   height: 180px;
   border-radius: 8px;
 }
+.rows_cards-section_card .thumbnails-artist {
+  border-radius: 50%;
+}
 .rows_cards-section_card .cards-section_card_name {
   color: #ffffff;
 }
 .rows_cards-section_card .cards-section_card_artist {
   color: #B3B3B3;
   font-size: 14px;
+}
+
+.body-footer_section {
+  background: linear-gradient(45deg, #af2896, #509bf5);
+}
+.body-footer_section .body-footer_section_text-1 {
+  font-size: 16px;
+  color: #ffffff;
+}
+.body-footer_section .body-footer_section_text-1 #linea-2 {
+  font-size: 14px;
+}
+
+.body-footer_section_btn {
+  cursor: pointer;
+}
+.body-footer_section_btn:hover {
+  scale: 1.04;
+}
+.body-footer_section_btn #footer-btn {
+  font-size: 16px;
+  border-radius: 50px;
+  border-color: #ffffff;
+  color: #000000;
+  width: 190px;
+  height: 48px;
+}
+
+.card_name_station-class {
+  font-size: 14px;
+  color: #B3B3B3;
 }
 
 * {
@@ -596,6 +646,7 @@ body {
 body .main {
   display: grid;
   grid-template-columns: 432px 1fr;
+  height: 80dvh;
 }
 
 /*# sourceMappingURL=Spotify.css.map */
