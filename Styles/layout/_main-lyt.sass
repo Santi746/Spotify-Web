@@ -4,7 +4,8 @@
 .main-section--lyt
     @include scrollbar-Y
     display: grid
-    grid-template-rows: repeat(6, 1fr)       
+    grid-template-rows: repeat(5, 1fr)       
+    grid-template-columns: 1fr
     margin: 0 8px
     padding: 14px 34px 14px 34px
     .main-section_rows
@@ -15,7 +16,12 @@
             align-items: center
             .title_text-2
                 margin-top: 24px
-
+    .main_footer
+        margin-top: 140px
+        .main-footer_content
+            display: grid
+            grid-template-rows: 300px 
+            
 .rows_cards-section
     @include cards-scrollbar
     display: grid

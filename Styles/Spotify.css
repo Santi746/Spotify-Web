@@ -519,7 +519,8 @@
   scrollbar-color: #b3b3b3 #232323;
   scrollbar-width: thin;
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   margin: 0 8px;
   padding: 14px 34px 14px 34px;
 }
@@ -536,6 +537,13 @@
 }
 .main-section--lyt .main-section_rows .rows_title .title_text-2 {
   margin-top: 24px;
+}
+.main-section--lyt .main_footer {
+  margin-top: 140px;
+}
+.main-section--lyt .main_footer .main-footer_content {
+  display: grid;
+  grid-template-rows: 300px;
 }
 
 .rows_cards-section {
@@ -618,11 +626,11 @@
   background: linear-gradient(45deg, #af2896, #509bf5);
 }
 .body-footer_section .body-footer_section_text-1 {
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
 }
 .body-footer_section .body-footer_section_text-1 #linea-2 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .body-footer_section_btn {
