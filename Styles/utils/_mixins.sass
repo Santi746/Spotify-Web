@@ -6,9 +6,20 @@
   place-content: center
   flex-direction: row
 
+@mixin flex-box-beetween
+  display: flex
+  justify-content: space-between
+  align-items: center
+
 @mixin flex-box-start
   display: flex
   align-items: start
+  flex-direction: row
+
+@mixin flex-box-end
+  display: flex
+  align-items: center
+  text-align: center
   flex-direction: row
 
 @mixin grid-main-content-lyt
@@ -23,7 +34,15 @@
 @mixin main_aside-size
   height: 80%
   width: 80%
-  
+
+@mixin scrollbar-Y
+  overflow-y: auto
+  scrollbar-color: #b3b3b3 #232323
+  scrollbar-width: thin
+
+@mixin cards-scrollbar
+  overflow-x: scroll
+  overflow-y: hidden
 
 @mixin off-borders-backgrounds
   background: none
