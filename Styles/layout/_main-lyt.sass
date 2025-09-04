@@ -5,7 +5,6 @@
     @include scrollbar-Y
     display: grid
     grid-template-rows: repeat(5, 1fr)       
-    grid-template-columns: 1fr
     margin: 0 8px
     padding: 14px 34px 14px 34px
     .main-section_rows
@@ -17,11 +16,38 @@
             .title_text-2
                 margin-top: 24px
     .main_footer
-        margin-top: 140px
-        .main-footer_content
+        display: grid
+        grid-template-rows: 331px 60px
+        margin-top: 100px
+        .main_footer_content
             display: grid
-            grid-template-rows: 300px 
-            
+            grid-template-columns: repeat(5, 1fr)
+            gap: 12px
+            padding-top: 70px
+            margin-bottom: 28px
+
+            .footer_content_column--lyt
+                display: flex
+                flex-direction: column
+                justify-content: start
+                gap: $gapping
+            .footer_content_column_svg
+                @include flex-box
+                gap: 14px
+                padding-left: 32px
+                .content_column_svg_instagram
+                    @include big
+                    padding: 12px
+                .content_column_svg_twitter
+                    @include big
+                    padding: 12px
+                .content_column_svg_facebook
+                    @include big
+                    padding: 12px
+.main_footer_copyright
+    padding-top: 10px
+    font-size: $font-small
+
 .rows_cards-section
     @include cards-scrollbar
     display: grid
@@ -33,7 +59,7 @@
         gap: 6px
         .cards-section_card_name--lyt
             justify-content: start 
-            gap: 8px
+            gap: 8px 
             margin-top: 3px
         .E-class                      
             @include flex-box-start
@@ -43,13 +69,13 @@
         .E-img
             @include very-small
 
-.body-footer
-   display: grid
-   grid-template-rows: 100px
-   .body-footer_section--lyt
-    @include flex-box-beetween
-    padding: 14px
-    margin: 9px 8px 24px 8px
+.body-footer 
+    display: grid
+    grid-template-rows: 9dvh
+    margin: 10px 8px 16px 8px
+    .body-footer_section--lyt
+        @include flex-box-beetween
+        padding: 14px
 
 .body-footer_section_btn--lyt
     margin-right: 8px

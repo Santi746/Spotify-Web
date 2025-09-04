@@ -1,0 +1,59 @@
+@use "../utils/mixins" as *
+@use "../utils/variables"
+
+@media (max-width: 1600px)
+    
+
+@media (min-width: 1024px) and (max-width: 1380px)
+    .flex-start_search-bar_input
+        #input
+            width: 320px
+
+@media (min-width: 1024px) and (max-width: 1280px)   ///aqui hiba el codigo del aside que hacia que se encojiera,despues de querer hacerle cambios mas adelante en 1160px no agarraba estilos borre fragmentos de codigo incluyendo el que se encontraba aqui y aun asi el aside seguia estilado por alguna razon no fue hasta un tiempo que magicamente dejo de estar estilado sin embargo no agarra ningun tipo de estilo
+    
+    .aside-section     
+         background-color: #ffff   ///nisiquiera esto funciona//
+         .aside-section_middle  //prueba,tampcoo funciono //
+            width: 300px
+            height: 220px
+
+
+    .flex-start_search-bar_input
+        #input 
+            width: 270px
+
+@media (min-width: 1024px) and (max-width: 1234px)
+    .flex-start_search-bar_input
+        #input
+            width: 230px
+
+@media (min-width: 1024px) and (max-width: 1190px)
+    .flex-start_search-bar _input
+        #input
+            width: 200px
+            background-color:  #FFFF                        ///TAMPOCO AGARRA ESTILO AAAAAAAAAAAAAAAA ME VOY A MATARARRRRRRRRRRRRRRRRRRAGESJDPSHDSIDHE98FHSEU
+
+@media (min-width: 1024px) and (max-width: 1160px)
+    .flex-start_search-bar_input
+        display: block
+        width: 49px
+        background-color: #FFFF  //otra etiqueta de prueba que tampoco funcina
+        .search-bar_input_search-logo
+            @include flex-box
+            padding: 0
+        #search-logo
+            margin-top: 10px
+        #input
+            width: 0
+            height: 0
+        .search-bar_explorer-icon
+            display:  block
+            border: 0
+            width: 0
+            height: 0
+        #explorer-icon
+            display: none
+            width: 0
+            height: 0
+            
+    

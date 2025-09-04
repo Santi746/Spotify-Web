@@ -520,7 +520,6 @@
   scrollbar-width: thin;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: 1fr;
   margin: 0 8px;
   padding: 14px 34px 14px 34px;
 }
@@ -539,11 +538,50 @@
   margin-top: 24px;
 }
 .main-section--lyt .main_footer {
-  margin-top: 140px;
-}
-.main-section--lyt .main_footer .main-footer_content {
   display: grid;
-  grid-template-rows: 300px;
+  grid-template-rows: 331px 60px;
+  margin-top: 100px;
+}
+.main-section--lyt .main_footer .main_footer_content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding-top: 70px;
+  margin-bottom: 28px;
+}
+.main-section--lyt .main_footer .main_footer_content .footer_content_column--lyt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8px;
+}
+.main-section--lyt .main_footer .main_footer_content .footer_content_column_svg {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-direction: row;
+  gap: 14px;
+  padding-left: 32px;
+}
+.main-section--lyt .main_footer .main_footer_content .footer_content_column_svg .content_column_svg_instagram {
+  width: 42px;
+  height: 42px;
+  padding: 12px;
+}
+.main-section--lyt .main_footer .main_footer_content .footer_content_column_svg .content_column_svg_twitter {
+  width: 42px;
+  height: 42px;
+  padding: 12px;
+}
+.main-section--lyt .main_footer .main_footer_content .footer_content_column_svg .content_column_svg_facebook {
+  width: 42px;
+  height: 42px;
+  padding: 12px;
+}
+
+.main_footer_copyright {
+  padding-top: 10px;
+  font-size: 14px;
 }
 
 .rows_cards-section {
@@ -578,14 +616,14 @@
 
 .body-footer {
   display: grid;
-  grid-template-rows: 100px;
+  grid-template-rows: 9dvh;
+  margin: 10px 8px 16px 8px;
 }
 .body-footer .body-footer_section--lyt {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px;
-  margin: 9px 8px 24px 8px;
 }
 
 .body-footer_section_btn--lyt {
@@ -593,7 +631,7 @@
 }
 
 .main-section {
-  background-color: #1f1f1f;
+  background-color: #121212;
   border-radius: 8px;
 }
 
@@ -618,6 +656,37 @@
   color: #ffffff;
 }
 .rows_cards-section_card .cards-section_card_artist {
+  color: #B3B3B3;
+  font-size: 14px;
+}
+
+.main_footer_content {
+  border-top: 1px solid rgba(55, 55, 55, 0.7450980392);
+  border-bottom: 1px solid rgba(55, 55, 55, 0.7450980392);
+}
+.main_footer_content .footer_content_column {
+  color: #B3B3B3;
+}
+.main_footer_content .footer_content_column .content_column_strong {
+  color: #ffffff;
+}
+.main_footer_content .footer_content_column_svg .content_column_svg_instagram {
+  background-color: #1f1f1f;
+  border-radius: 40px;
+  fill: #ffffff;
+}
+.main_footer_content .footer_content_column_svg .content_column_svg_twitter {
+  background-color: #1f1f1f;
+  border-radius: 40px;
+  fill: #ffffff;
+}
+.main_footer_content .footer_content_column_svg .content_column_svg_facebook {
+  background-color: #1f1f1f;
+  border-radius: 40px;
+  fill: #ffffff;
+}
+
+.main_footer_copyright {
   color: #B3B3B3;
   font-size: 14px;
 }
@@ -653,6 +722,60 @@
   color: #B3B3B3;
 }
 
+@media (min-width: 1024px) and (max-width: 1380px) {
+  .flex-start_search-bar_input #input {
+    width: 320px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .aside-section {
+    background-color: white;
+  }
+  .flex-start_search-bar_input #input {
+    width: 270px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1234px) {
+  .flex-start_search-bar_input #input {
+    width: 230px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1190px) {
+  .flex-start_search-bar _input #input {
+    width: 200px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1160px) {
+  .flex-start_search-bar_input {
+    display: block;
+    width: 49px;
+  }
+  .flex-start_search-bar_input .search-bar_input_search-logo {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-direction: row;
+    padding: 0;
+  }
+  .flex-start_search-bar_input #search-logo {
+    margin-top: 10px;
+  }
+  .flex-start_search-bar_input #input {
+    width: 0;
+    height: 0;
+  }
+  .flex-start_search-bar_input .search-bar_explorer-icon {
+    display: block;
+    border: 0;
+    width: 0;
+    height: 0;
+  }
+  .flex-start_search-bar_input #explorer-icon {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;

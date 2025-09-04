@@ -1,0 +1,18 @@
+/* Error: Inconsistent indentation, expected 4 spaces.
+ *    ,
+ * 16 |   ///no existe ningun estilo que altere modifique el tamaño del aside lo tenia sin embargo
+ *    | ^^
+ *    '
+ *   responsive\_laptop-mq.sass 16:1  @use
+ *   Spotify.sass 4:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Inconsistent indentation, expected 4 spaces.\a    \2577 \a 16 \2502    ///no existe ningun estilo que altere modifique el tama\f1 o del aside lo tenia sin embargo\d\a    \2502  ^^\a    \2575 \a   responsive\\_laptop-mq.sass 16:1  @use\a   Spotify.sass 4:1                 root stylesheet";
+}

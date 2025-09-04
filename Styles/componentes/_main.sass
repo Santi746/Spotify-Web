@@ -3,7 +3,7 @@
 @use "../layout/_main-lyt" as *
 
 .main-section
-    background-color: #1f1f1f
+    background-color: #121212
     border-radius: 8px
 
 .rows_title
@@ -25,12 +25,39 @@
         color: $text-gray-color
         font-size: $font-small
 
+.main_footer_content
+    border-top: 1px solid #373737be
+    border-bottom: 1px solid #373737be
+    .footer_content_column
+        color: $text-gray-color
+        .content_column_strong
+            color: $white-color
+
+    .footer_content_column_svg
+        .content_column_svg_instagram
+            background-color: $background-elements
+            border-radius: 40px
+            fill: $white-color
+        .content_column_svg_twitter
+            background-color: $background-elements
+            border-radius: 40px
+            fill: $white-color
+        .content_column_svg_facebook
+            background-color: $background-elements
+            border-radius: 40px
+            fill: $white-color
+.main_footer_copyright
+    color: $text-gray-color
+    font-size: $font-small
+    
+
+
 
 .body-footer_section
     background: linear-gradient(45deg, #af2896, #509bf5)
     .body-footer_section_text-1
         font-size: $font-small
-        color: $white-color
+        color: $white-color  
         #linea-2
             font-size: $font-mid
 
