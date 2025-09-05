@@ -2,18 +2,65 @@
 @use "../utils/mixins" as *
 @use "../layout/_main-lyt" as *
 
+// contenido main //
+
+// BLOQUE DE ANIMACIONES //
+
 .main-section
-    background-color: #121212
-    border-radius: 8px
+  background-color: #121212
+  border-radius: 8px
+.main-section_rows
+  position: relative
+  .rows_cards-section_direccion
+    @include mid
+    opacity: 0
+    transition: opacity 0.4s ease-in-out
+    position: absolute
+    background-color: $background-elements
+    border-radius: 40px
+    padding: 8px
+    right: 20px 
+    bottom: 105px
+    #direccion-svg
+        @include very-small
+        fill: $white-color
+  &:hover .rows_cards-section_direccion
+      opacity: 1
+
+.rows_cards-section
+  .rows_cards-section_card
+    .cards-section_card_thumbnail
+      position: relative
+      .play-img
+        @include v-big
+        position: absolute
+        opacity: 0
+        transition: opacity 0.2s ease-in-out , transform 0.2s ease-in-out
+        transform: translateY(0px)
+        border-radius: 50%
+        left: 130px
+        bottom: 0
+    &:hover .cards-section_card_thumbnail .play-img
+      opacity: 1
+      transform: translateY(-8px)
+            
+//rows-main//
 
 .rows_title
     .title_text
         color: $white-color
         font-size: $font-grand 
+        &:hover
+            text-decoration: underline
     .title_text-2
         color: $text-gray-color
         font-size: $font-small
+        &:hover
+            text-decoration: underline
 .rows_cards-section_card
+    &:hover
+        background-color: #1e1e1e
+        border-radius: 8px
     .thumbnails
         @include thumbnail-size
         border-radius: 8px
@@ -21,17 +68,32 @@
         border-radius: 50%
     .cards-section_card_name
         color: $white-color
+        &:hover
+            text-decoration: underline
     .cards-section_card_artist
         color: $text-gray-color
         font-size: $font-small
+        &:hover
+            text-decoration: underline
+    
+.card_name_station-class
+    font-size: $font-small
+    color: $text-gray-color
+
+// footer de main section //
 
 .main_footer_content
     border-top: 1px solid #373737be
     border-bottom: 1px solid #373737be
     .footer_content_column
         color: $text-gray-color
-        .content_column_strong
+        .column_strong
             color: $white-color
+
+    .column_underline
+        &:hover  
+            text-decoration: underline
+            cursor: pointer
 
     .footer_content_column_svg
         .content_column_svg_instagram
@@ -50,7 +112,7 @@
     color: $text-gray-color
     font-size: $font-small
     
-
+// banner de registrar //
 
 
 .body-footer_section
@@ -75,7 +137,5 @@
     height: 48px        
 
 
-.card_name_station-class
-    font-size: $font-small
-    color: $text-gray-color
+
         

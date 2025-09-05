@@ -1,43 +1,72 @@
 @use "../utils/mixins" as *
-@use "../utils/variables"
+@use "../utils/variables" as *
 
-@media (max-width: 1600px)
-    
 
-@media (min-width: 1024px) and (max-width: 1380px)
+ 
+@media (max-width: 1380px)
     .flex-start_search-bar_input
         #input
             width: 320px
 
-@media (min-width: 1024px) and (max-width: 1280px)   ///aqui hiba el codigo del aside que hacia que se encojiera,despues de querer hacerle cambios mas adelante en 1160px no agarraba estilos borre fragmentos de codigo incluyendo el que se encontraba aqui y aun asi el aside seguia estilado por alguna razon no fue hasta un tiempo que magicamente dejo de estar estilado sin embargo no agarra ningun tipo de estilo
-    
-    .aside-section     
-         background-color: #ffff   ///nisiquiera esto funciona//
-         .aside-section_middle  //prueba,tampcoo funciono //
-            width: 300px
-            height: 220px
+@media (max-width: 1300px) 
+    #main-id
+        display: grid
+        grid-template-columns: 335px 1fr 
+        height: 80dvh
+    .main_aside
+        width: 330px
+        height: 592px
+        .aside-section   
+            width: 330px
+            height: 592px
+        .aside-section_middle 
+            width: 320px
+            height: 270px
+            .middle_podcast
+                height: 170px
+
+    .rows_cards-section--mq
+        gap: 2px
+        .rows_cards-section_card
+            display: grid 
+            grid-template-rows: 160px 20px 50px
+            gap: 6px
+            .cards-section_card_thumbnail
+                width: 160px
+                height: 160px
+                .thumbnails
+                    width: 160px
+                    height: 160px
+            .cards-section_card_name
+                font-size: $font-small
+            .cards-section_card_artist
+                font-size: $font-very-small
 
 
-    .flex-start_search-bar_input
+    .flex-start_search-bar_input 
         #input 
             width: 270px
+    .main_footer_content
+        .footer_content_column
+            font-size: $font-very-small
 
-@media (min-width: 1024px) and (max-width: 1234px)
+@media (max-width: 1234px)
     .flex-start_search-bar_input
         #input
             width: 230px
 
-@media (min-width: 1024px) and (max-width: 1190px)
+@media (min-width: 1190px) 
     .flex-start_search-bar _input
         #input
             width: 200px
-            background-color:  #FFFF                        ///TAMPOCO AGARRA ESTILO AAAAAAAAAAAAAAAA ME VOY A MATARARRRRRRRRRRRRRRRRRRAGESJDPSHDSIDHE98FHSEU
+            background-color:  #FFFF                        ///AAAAAAAAAAAAAAAA ME VOY A MATARARRRRRRRRRRRRRRRRRRAGESJDPSHDSIDHE98FHSEU
 
-@media (min-width: 1024px) and (max-width: 1160px)
+@media (max-width: 1189px) 
+    .footer_text
+            gap: 8px
     .flex-start_search-bar_input
         display: block
         width: 49px
-        background-color: #FFFF  //otra etiqueta de prueba que tampoco funcina
         .search-bar_input_search-logo
             @include flex-box
             padding: 0
@@ -55,5 +84,25 @@
             display: none
             width: 0
             height: 0
+
+@media (max-width: 1100px)
+    #main-id
+        display: grid
+        grid-template-columns: 308px 1fr 
+        height: 80dvh
+    .main_aside
+        width: 300px
+        height: 592px
+        .aside-section   
+            width: 310px
+            height: 592px
+        .aside-section_middle 
+            width: 292px
+            height: 270px
+        .footer_text
+            gap: 8px
+       
+
+    
             
     

@@ -1,0 +1,60 @@
+@use "../utils/mixins" as *
+@use "../utils/variables" as *
+
+@media (max-width: 735px)
+    .rows_title
+            .title_text--mq
+                font-size: $font-big
+    .flex-end_buttons-1_btn-1
+        @include delete
+    .flex-end_buttons-1_btn-2
+        @include delete
+    .nav-section_flex-end_divider
+        @include delete
+
+
+@media (max-width: 690px)
+    .main_footer_content
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        .footer_content_column
+            font-size: 10px
+        .footer_content_column--mq
+            @include delete
+            .footer_content_column_svg
+                @include delete
+                .content_column_svg_instagram
+                    @include delete
+                .content_column_svg_twitter
+                    @include delete
+                .content_column_svg_facebook
+                    @include delete
+
+@media (max-width: 660px)
+    .body-footer_section  
+        .body-footer_section_text-1   
+            #linea-2
+                font-size: 11px
+    .flex-end_buttons-2_btn-1
+        gap: 1px
+    .flex-end_buttons-2_btn-2
+        @include delete
+
+
+@media (max-width: 500px)
+    #main-id
+        display: grid
+        grid-template-columns: 1000px 1fr 
+        height: 80dvh
+        .main_aside                                          // YA ME CANSE //
+            @include delete    
+        .main_footer_content
+            display: grid
+            grid-template-columns: repeat(4, 100px)
+           
+        
+
+
+
+
+    

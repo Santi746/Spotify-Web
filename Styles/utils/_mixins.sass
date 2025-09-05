@@ -1,6 +1,7 @@
-/* mixins */
+
+  /* mixins */
     
-@mixin flex-box
+@mixin flex-box  
   display: flex
   place-items: center
   place-content: center
@@ -24,7 +25,7 @@
 
 @mixin grid-main-content-lyt
   display: grid
-  grid-template-columns: 432px 1fr //no tiene un tamaño fijo es 1fr
+  grid-template-columns: 408px 1fr //no tiene un tamaño fijo es 1fr
   height: 80dvh
 
 
@@ -76,4 +77,13 @@
 @mixin thumbnail-size
   width: 180px
   height: 180px
+
+@mixin delete
+  display: none
+  width: 0
+  height: 0
+
+
+  //mixins responsive //
+  
 

@@ -1,0 +1,59 @@
+@use "../utils/mixins" as *
+@use "../utils/variables" as *
+
+@media (max-width: 1000px)
+  .main-section--lyt
+    .main_footer
+      .main_footer_content
+        padding-top: 30px 
+
+  .nav-section_flex-end_buttons-1
+    #premium
+        font-size: $font-small
+    #ayuda
+        font-size: $font-small
+    #descargar
+        font-size: $font-small
+
+  .flex-end_buttons-2_btn-3
+        height: 48px
+        width: 130px
+
+@media (max-width: 856px)
+    #main-id
+        display: grid
+        grid-template-columns: 250px 1fr 
+        height: 80dvh
+        .footer_content_column_svg
+            padding-left: 0 
+            flex-direction: column
+    .main_aside
+        width: 245px
+        height: 592px
+        .aside-section   
+            width: 245px
+            height: 592px
+            gap: 6px
+        .aside-section_middle 
+            width: 235px
+            height: 270px
+            gap: 42px
+            .middle_playlist
+                height: 170px
+            .middle_podcast
+                height: 170px
+        .aside-section_footer
+            padding-right: 12px
+        .footer_text
+            margin-left: 14px
+    .nav-section_flex-end
+        .flex-end_buttons-1_btn-3
+            display: none
+            width: 0
+            height: 0
+        .nav-section_flex-end_buttons-2
+            gap: 12px
+        .flex-end_buttons-2_btn-3
+            height: 40px
+            width: 110px
+      
