@@ -1,30 +1,18 @@
 @use "../utils/mixins" as *
 @use "../utils/variables" as *
 
+// responsive = tortura final //
 
+// tamaño laptop 1380px-1100px //
  
 @media (max-width: 1380px)
-    .flex-start_search-bar_input
+    .flex-start_search-bar_input 
         #input
             width: 320px
 
 @media (max-width: 1300px) 
-    #main-id
-        display: grid
-        grid-template-columns: 335px 1fr 
-        height: 80dvh
-    .main_aside
-        width: 330px
-        height: 592px
-        .aside-section   
-            width: 330px
-            height: 592px
-        .aside-section_middle 
-            width: 320px
-            height: 270px
-            .middle_podcast
-                height: 170px
-
+    @include aside-ajust(335px ,330px ,330px ,320px ,270px ,170px )
+    
     .rows_cards-section--mq
         gap: 2px
         .rows_cards-section_card
@@ -55,11 +43,7 @@
         #input
             width: 230px
 
-@media (min-width: 1190px) 
-    .flex-start_search-bar _input
-        #input
-            width: 200px
-            background-color:  #FFFF                        ///AAAAAAAAAAAAAAAA ME VOY A MATARARRRRRRRRRRRRRRRRRRAGESJDPSHDSIDHE98FHSEU
+                                                                //AAAAAAAAAAAAAAAA 😭😭😭😭 //
 
 @media (max-width: 1189px) 
     .footer_text
@@ -70,37 +54,19 @@
         .search-bar_input_search-logo
             @include flex-box
             padding: 0
-        #search-logo
-            margin-top: 10px
         #input
-            width: 0
-            height: 0
+            @include delete
         .search-bar_explorer-icon
-            display:  block
+            @include delete
             border: 0
-            width: 0
-            height: 0
         #explorer-icon
-            display: none
-            width: 0
-            height: 0
+            @include delete
+            
 
 @media (max-width: 1100px)
-    #main-id
-        display: grid
-        grid-template-columns: 308px 1fr 
-        height: 80dvh
-    .main_aside
-        width: 300px
-        height: 592px
-        .aside-section   
-            width: 310px
-            height: 592px
-        .aside-section_middle 
-            width: 292px
-            height: 270px
-        .footer_text
-            gap: 8px
+    @include aside-ajust(308px ,300px ,310px ,292px ,270px ,170px, 42px)
+    .footer_text
+        gap: 8px
        
 
     

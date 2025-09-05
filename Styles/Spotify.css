@@ -615,19 +615,19 @@
   font-size: 14px;
 }
 
-.body-footer {
+.banner-footer {
   display: grid;
   grid-template-rows: 9dvh;
   margin: 10px 8px 16px 8px;
 }
-.body-footer .body-footer_section--lyt {
+.banner-footer .main-banner_section--lyt {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px;
 }
 
-.body-footer_section_btn--lyt {
+.main-banner_section_btn--lyt {
   margin-right: 8px;
 }
 
@@ -744,15 +744,24 @@
   border-radius: 40px;
   fill: #ffffff;
 }
+.main_footer_content .footer_content_column_svg .content_column_svg_instagram:hover {
+  background-color: #5a5a5a;
+}
 .main_footer_content .footer_content_column_svg .content_column_svg_twitter {
   background-color: #1f1f1f;
   border-radius: 40px;
   fill: #ffffff;
 }
+.main_footer_content .footer_content_column_svg .content_column_svg_twitter:hover {
+  background-color: #5a5a5a;
+}
 .main_footer_content .footer_content_column_svg .content_column_svg_facebook {
   background-color: #1f1f1f;
   border-radius: 40px;
   fill: #ffffff;
+}
+.main_footer_content .footer_content_column_svg .content_column_svg_facebook:hover {
+  background-color: #5a5a5a;
 }
 
 .main_footer_copyright {
@@ -760,24 +769,24 @@
   font-size: 14px;
 }
 
-.body-footer_section {
+.main-banner_section {
   background: linear-gradient(45deg, #af2896, #509bf5);
 }
-.body-footer_section .body-footer_section_text-1 {
+.main-banner_section .main-banner_section_text-1 {
   font-size: 14px;
   color: #ffffff;
 }
-.body-footer_section .body-footer_section_text-1 #linea-2 {
+.main-banner_section .main-banner_section_text-1 #linea-2 {
   font-size: 16px;
 }
 
-.body-footer_section_btn {
+.main-banner_section_btn {
   cursor: pointer;
 }
-.body-footer_section_btn:hover {
+.main-banner_section_btn:hover {
   scale: 1.04;
 }
-.body-footer_section_btn #footer-btn {
+.main-banner_section_btn #banner-btn {
   font-size: 16px;
   border-radius: 50px;
   border-color: #ffffff;
@@ -846,12 +855,6 @@
     width: 230px;
   }
 }
-@media (min-width: 1190px) {
-  .flex-start_search-bar _input #input {
-    width: 200px;
-    background-color: white;
-  }
-}
 @media (max-width: 1189px) {
   .footer_text {
     gap: 8px;
@@ -867,18 +870,16 @@
     flex-direction: row;
     padding: 0;
   }
-  .flex-start_search-bar_input #search-logo {
-    margin-top: 10px;
-  }
   .flex-start_search-bar_input #input {
+    display: none;
     width: 0;
     height: 0;
   }
   .flex-start_search-bar_input .search-bar_explorer-icon {
-    display: block;
-    border: 0;
+    display: none;
     width: 0;
     height: 0;
+    border: 0;
   }
   .flex-start_search-bar_input #explorer-icon {
     display: none;
@@ -903,8 +904,12 @@
   .main_aside .aside-section_middle {
     width: 292px;
     height: 270px;
+    gap: 42px;
   }
-  .main_aside .footer_text {
+  .main_aside .aside-section_middle .middle_podcast {
+    height: 170px;
+  }
+  .footer_text {
     gap: 8px;
   }
 }
@@ -932,10 +937,6 @@
     grid-template-columns: 250px 1fr;
     height: 80dvh;
   }
-  #main-id .footer_content_column_svg {
-    padding-left: 0;
-    flex-direction: column;
-  }
   .main_aside {
     width: 245px;
     height: 592px;
@@ -943,23 +944,25 @@
   .main_aside .aside-section {
     width: 245px;
     height: 592px;
-    gap: 6px;
   }
   .main_aside .aside-section_middle {
     width: 235px;
     height: 270px;
-    gap: 42px;
-  }
-  .main_aside .aside-section_middle .middle_playlist {
-    height: 170px;
   }
   .main_aside .aside-section_middle .middle_podcast {
     height: 170px;
   }
-  .main_aside .aside-section_footer {
+  .footer_content_column_svg {
+    padding-left: 0;
+    flex-direction: column;
+  }
+  .middle_playlist {
+    height: 170px;
+  }
+  .aside-section_footer {
     padding-right: 12px;
   }
-  .main_aside .footer_text {
+  .footer_text {
     margin-left: 14px;
   }
   .nav-section_flex-end .flex-end_buttons-1_btn-3 {
@@ -1030,7 +1033,7 @@
   }
 }
 @media (max-width: 660px) {
-  .body-footer_section .body-footer_section_text-1 #linea-2 {
+  .main-banner_section .main-banner_section_text-1 #linea-2 {
     font-size: 11px;
   }
   .flex-end_buttons-2_btn-1 {

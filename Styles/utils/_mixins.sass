@@ -84,6 +84,26 @@
   height: 0
 
 
-  //mixins responsive //
+  //mixin con parametros (solo porque lo pide) //
+
+@mixin aside-ajust($grid, $aside, $aside-section, $middle-width, $middle-height ,$podcast, $middle-gap: null)
+    #main-id
+      display: grid
+      grid-template-columns: $grid 1fr 
+      height: 80dvh
+    .main_aside
+      width: $aside
+      height: 592px
+      .aside-section   
+        width: $aside-section
+        height: 592px
+      .aside-section_middle 
+        width: $middle-width
+        height: 270px
+        gap: $middle-gap
+        .middle_podcast
+          height: $podcast  
+    @content
+
   
 
